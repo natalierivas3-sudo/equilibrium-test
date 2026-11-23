@@ -41,8 +41,19 @@ body:not(.need-picked) #guidePanel #results { display: none; }
 .footer-row { display: flex; flex-wrap: wrap; gap: 1.25rem; margin-top: 0.25rem; }
 .footer-row a { color: inherit; font-size: 0.9rem; text-decoration: underline; text-underline-offset: 3px; }
 
-/* Cards with Call/Text buttons (crisis lines): tags on one line, buttons side by side underneath. */
+/* Every card footer: tags on their own line, then the actions underneath,
+   as equal-width buttons side by side. Same layout on every card. */
 .res-tag { white-space: nowrap; }
-.res-footer:has(.crisis-actions) { flex-direction: column; align-items: stretch; gap: 0.75rem; }
-.res-footer .crisis-actions { display: grid; grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr)); gap: 0.5rem; width: 100%; }
-.res-footer .crisis-actions a { justify-content: center; }
+.res-footer { flex-direction: column; align-items: stretch; gap: 0.75rem; }
+.res-footer .res-tags-list:empty { display: none; }
+.res-footer .crisis-actions,
+.res-footer .place-actions { display: grid; grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr)); gap: 0.5rem; width: 100%; }
+.res-footer .crisis-actions a,
+.res-footer .place-actions > * { justify-content: center; text-align: center; margin: 0; }
+/* Plain "View … →" links become outline buttons that match "Website". */
+.res-footer > .res-link {
+    align-self: stretch; justify-content: center; text-align: center; white-space: normal;
+    min-height: 2.5rem; padding: 0.5rem 1rem; border-radius: 999px;
+    border: 1px solid var(--burnt-orange); background: transparent; text-decoration: none;
+}
+.res-footer > .res-link:hover { background: var(--burnt-orange-light); text-decoration: none; }

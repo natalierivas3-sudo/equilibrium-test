@@ -39,6 +39,8 @@
             if (e.target.closest("[data-about-back]")) setTimeout(route, 0);
         });
         route();
+        // Static route links (UT maps) pick up the saved Apple/Google Maps choice.
+        if (window.EQ_DIR && window.EQ_DIR.refreshAll) window.EQ_DIR.refreshAll();
 
         // Results stay hidden until someone picks something.
         const title = document.getElementById("resultsTitle");

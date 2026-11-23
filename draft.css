@@ -1,0 +1,42 @@
+/* Draft B: simplified home page. Loaded after prototype.css. */
+
+/* Views: Home shows only the [data-home] sections; other pages show alone. */
+main > section.page-view:not(.is-current) { display: none; }
+body.on-page main > section[data-home] { display: none; }
+body.show-about main > section.page-view { display: none; }
+body.on-page .page-view.is-current { padding-top: 2.25rem; min-height: 60vh; }
+
+/* Tighter hero so the six choices sit on the first screen. */
+.hero.hero-app { padding: 2.25rem 0 1rem; }
+.hero-app h1 { margin-bottom: 0.4rem; }
+.hero-app .hero-lede { margin-bottom: 1.25rem; }
+@media (max-width: 768px) {
+    .hero.hero-app { padding-top: 1.25rem; }
+    .hero-app h1 { font-size: 1.9rem; }
+}
+
+/* Six choices instead of eight. */
+.need-grid { grid-template-columns: repeat(6, 1fr); }
+@media (max-width: 1024px) { .need-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 600px) { .need-grid { grid-template-columns: repeat(2, 1fr); } }
+
+.newcomer-row { gap: 1.25rem; flex-wrap: wrap; }
+
+/* Results stay hidden until someone picks a need. */
+body:not(.need-picked) #guidePanel #results { display: none; }
+
+/* One-line crisis strip on Home. */
+.home-crisis { padding-block: 0.5rem 1.5rem; }
+.home-crisis p {
+    margin: 0; padding: 0.8rem 1rem; border-radius: 12px; font-size: 0.95rem;
+    background: var(--terracotta-light); color: var(--charcoal); text-align: center;
+}
+.home-crisis a { color: var(--burnt-orange); font-weight: 600; }
+
+.feedback-simple { padding-block: 1rem 2.5rem; }
+
+/* Simpler footer. */
+.footer-simple { display: grid; gap: 0.6rem; max-width: 70ch; }
+.footer-simple p { margin: 0; opacity: 0.85; font-size: 0.9rem; line-height: 1.55; }
+.footer-row { display: flex; flex-wrap: wrap; gap: 1.25rem; margin-top: 0.25rem; }
+.footer-row a { color: inherit; font-size: 0.9rem; text-decoration: underline; text-underline-offset: 3px; }

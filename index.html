@@ -12,71 +12,29 @@
 <link rel="stylesheet" href="leaflet.css">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="prototype.css">
-
+<link rel="stylesheet" href="draft.css">
 </head>
 <body>
+
 <div class="test-strip" id="testStrip">
-    <span><strong>Test version 56</strong> · not the live site</span>
-    <button type="button" id="changesToggle" aria-expanded="false" aria-controls="changesPanel">What changed?</button>
+    <span><strong>Test version 57</strong> · simplified home page</span>
+    <button type="button" id="changesToggle" aria-expanded="false" aria-controls="changesPanel">What's different?</button>
 </div>
 <div class="changes-panel" id="changesPanel" hidden>
     <div class="container">
-        <h3>Changes from the original</h3>
+        <h3>What's different from the current site</h3>
         <ul>
-            <li><strong>v56:</strong> “Talk instead of typing” removed from Rant.</li>
-            <li><strong>v55:</strong> Shorter note under Rant: just “Nothing here is saved or sent.”</li>
-            <li><strong>v54:</strong> After a rant is gone, a calm lake scene fills the space: soft dawn in light mode, moonlight and stars in dark mode.</li>
-            <li><strong>v53:</strong> Rant: tap Blow away, Burn, Blow up, or Wash away and it lets go right away, no extra button. Burn and Blow up now hit only the words (letters catch fire or blast apart), Wash away is unchanged, and the page no longer jumps.</li>
-            <li><strong>v52:</strong> Rant starter prompts removed.</li>
-            <li><strong>v51:</strong> Rant now has four ways to let go: Blow away, Burn, Blow up, and Wash away. Rants are timed (2 min by default, or 5 min, or no limit) so venting doesn’t turn into spiraling; at time’s up it offers one more minute, then lets go.</li>
-            <li><strong>v50:</strong> “Rant” added under Calm me: type it or say it out loud, then let it go. Nothing is saved or sent. If what you write mentions self-harm, a gentle check-in with 988 and CMHC appears first.</li>
-            <li><strong>v49:</strong> Container exercise now has calm, drawn nature scenes for each step (soft blues, slow water, sunset) and a Listen button that reads each step aloud, with an option to read every step automatically.</li>
-            <li><strong>v48:</strong> Menu reordered: Home, Study spots, All resources, UT maps, My saved, Origin story, Feedback. Fixed My saved lighting up with Home. “About” is now “Origin story.”</li>
-            <li><strong>v34–36:</strong> LinkedIn link added. About page rewritten with Natalie’s origin story: the drive to Austin during Hurricane Harvey, being first-gen, and how the site connects to psychiatry and public health.</li>
-            <li><strong>v33:</strong> Calm me also lists safe ways to steady yourself (breathing, a walk, texting someone, petting an animal, and more). About: MD/MPH candidate, UT 2017–2021, LinkedIn link ready.</li>
-            <li><strong>v32:</strong> “Student Wellness Hub” under the name. New About page in the top menu with the origin story (draft, with [brackets] to fill in).</li>
-            <li><strong>v31:</strong> Trying the other layout: Guide me, Surprise me, and Calm me as three equal buttons in a row.</li>
-            <li><strong>v30:</strong> New “Calm me” button next to Guide me and Surprise me. It opens two choices: Set it aside (container exercise) or Make something (creative prompt). Replaces the two text links.</li>
-            <li><strong>v29:</strong> Container exercise breathing now shows a count for every second, with short holds: Gentle (4-2-6-2, default), Box (4-4-4-4), or No holds (4-6).</li>
-            <li><strong>v28:</strong> “Where” is always respected: Online / at home no longer shows in-person places. When nothing fits, the site says so and suggests categories that do. Reclub’s Google Play button opens its app page.</li>
-            <li><strong>v27:</strong> Shorter labels: “Movement,” “Things to do,” “Nature.” The walking route uses the same Directions button (Google: full loop, Apple: walk to the start). Reclub added to Move my body with Get the app buttons.</li>
-            <li><strong>v26:</strong> One-tap crisis buttons: separate Call 988 and Text 988, Crisis Text Line opens a text with “HOME” filled in, and CMHC and Integral Care have Call buttons. Crisis Text Line added to Talk to someone. “Mindfulness & nervous system” is now “Calm the nervous system.”</li>
-            <li><strong>v25:</strong> “Three good things” can be typed, spoken, or picked from quick chips, and saved on your device. “Make something, badly” is now “Make something.” Directions asks Apple or Google Maps every time.</li>
-            <li><strong>v24:</strong> Places now have two buttons, Directions and Website. Directions asks Apple Maps or Google Maps the first time (change it under “Tailor it”). Hours moved under “More”; shorter descriptions.</li>
-            <li><strong>v23:</strong> Pins Mechanical Co. added to Instead of doomscrolling as a free, in-person option (free arcade games; bowling and pinball cost extra).</li>
-            <li><strong>v22:</strong> “Show where I am” now lists the 3 closest spots with walking times, shows how precise your location is, explains how to fix it if location is off, and says your location is never saved or shared.</li>
-            <li><strong>v21:</strong> Fixed “Just me” hiding most results: it now includes everything you can do on your own and leaves out only group activities (pickup sports, run clubs, craft nights, events). “Around Austin” now includes West Campus.</li>
-            <li><strong>v20:</strong> Bigger, cleaner map covering campus, West Campus, LBJ, and Dell Med, with every pin inside it. 7 West Campus spots added (Lucky Lab, Medici, Haraz, Jo’s, Les Bobos Crepes, Pease Park, Shoal Creek Trail) and a “West Campus” filter. Container exercise now labeled trauma-informed.</li>
-            <li><strong>v19:</strong> Price badges ($ to $$$) in the top-right of every card instead of “Free/Paid” tags. Simpler feedback at the very bottom with one button. Feedback in the top menu opens the form directly.</li>
-            <li><strong>v18:</strong> Shorter cards: one-sentence descriptions, 2 tags, one quote or tip, details under “More.” Removed “Last checked” and vague “access” hours. Consistent sentence case.</li>
-            <li><strong>v17:</strong> Interactive campus map in the Study Spot Directory, drawn from OpenStreetMap: tap pins for details and walking directions, filters update the pins, “Show on map” on every card, and “Show where I am.”</li>
-            <li><strong>v16:</strong> 11 new student-recommended study spots and 12 new break spots from r/UTAustin (skyspace, Welch patios, Law courtyard, museums, cheap eats), with student quotes, tips, and safety notes. New filters: Nap spots and Cheap eats.</li>
-            <li><strong>v13–15:</strong> POSH links straight to Austin events. Integral Care (Travis County mental health) added: 24/7 crisis helpline in the crisis box and under Talk to someone, plus walk-in urgent care and general services.</li>
-            <li><strong>v12:</strong> SweatPals added first under Move my body (fitness events around Austin). POSH added first under Explore Austin (local event flyers and tickets).</li>
-            <li><strong>v11:</strong> Header stays on one line on small phones and with larger text. Fixed cards pushing the page sideways on tablets and small laptops.</li>
-            <li><strong>v9–10:</strong> Instead of doomscrolling: one research-backed idea at a time (“Another idea” for the next), a short list of the rest, and two phone settings tucked away. The research is behind “Why this works.”</li>
-            <li><strong>v8:</strong> Animals now lists every pick from Do512’s “Where to See Animals in Austin”: in-town spots first, then day trips marked “Needs a car.” New filters: “No car needed” (Take a break) and “Day trips” (Explore Austin). The racial geography tour card now describes the real tour. All 7 art videos checked on YouTube; one broken link replaced.</li>
-            <li><strong>v7:</strong> Every list shows all results by default.</li>
-            <li><strong>v6:</strong> Racial Geography Tour of UT Austin added under Get outside and Explore Austin (Campus walks &amp; tours).</li>
-            <li><strong>v5:</strong> Leisure Art Projects now plays 7 easy art videos (Bob Ross, zentangle, blind contour, watercolor, exquisite corpse, and more), with the full list on the card. Some prompts have a “Watch how” link.</li>
-            <li><strong>v4:</strong> a guided, trauma-informed container exercise with a submarine, vault, box, or your own container. Start it from “Need to set something aside?” or from Take a break.</li>
-            <li><strong>v3:</strong> Campus Reset Walk (Google Maps walking route), Turtle Pond, and Nature Rx maps under Get outside. Photo slots on study spots. When nothing matches every preference, you see the closest matches instead of an empty page.</li>
-            <li><strong>v2:</strong> small art and imagination prompts with a timer, under “Stuck?”, in Take a break, and in every third Surprise me pick. Bob Ross is now “Leisure Art Projects.”</li>
-            <li><strong>v1:</strong> Opens with <strong>Guide me</strong> and <strong>Surprise me</strong>.</li>
-            <li>Picking a need shows results right under the buttons. No jump down the page, no second tap required.</li>
-            <li>Preferences: who you want around, free only, and where (UT campus, Austin, online).</li>
-            <li>Save ♡ and Share on every card. Saved items live under “My saved.”</li>
-            <li>A “New to Austin?” starter path.</li>
-            <li>Full crisis box moved lower. A “Need help now?” link stays pinned in the header.</li>
-            <li>Study spots and the full library show results by default.</li>
+            <li><strong>One screen to start.</strong> The home page is just the question, three buttons, and six choices. Nothing loads below until you pick something.</li>
+            <li><strong>Separate pages.</strong> Study spots, All resources, UT maps, and crisis support each open on their own page from the menu instead of stacking under Home.</li>
+            <li><strong>Fewer words.</strong> Shorter intro line, filters folded away by default, and the top banner removed.</li>
+            <li><strong>Fewer duplicate buttons.</strong> “My saved” and “Campus maps” are only in the menu. “Instead of doomscrolling” is a link under the choices.</li>
+            <li><strong>Crisis help stays one tap away.</strong> “Need help now?” in the header, plus a one-line 988 strip on Home.</li>
+            <li>Everything else (cards, map, Calm me, Rant, saved items) works the same.</li>
         </ul>
     </div>
 </div>
 
-<div class="prototype-banner">
-    <span>Dell Med Student Initiative</span>
-    <a href="https://machinemindsautomation.com/#" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">For Students by Students</a>
-</div>
+
 
 <header>
     <div class="container nav-container">
@@ -148,10 +106,10 @@
     </section>
 
     <!-- HERO + MAIN EXPERIENCE -->
-    <section class="hero hero-app">
+    <section class="hero hero-app" data-home>
         <div class="container hero-single">
             <h1>What do you need today?</h1>
-            <p class="hero-lede">Free and low-cost ways to take a break, get outside, move, study, or find support around UT and Austin.</p>
+            <p class="hero-lede">Free and low-cost ways to feel a little better around UT and Austin.</p>
 
             <div class="mode-switch layout-three" id="modeSwitch" role="tablist" aria-label="How do you want to find something?">
                 <button type="button" role="tab" id="tabGuide" class="mode-btn active" aria-selected="true" aria-controls="guidePanel">
@@ -169,8 +127,8 @@
             </div>
 
             <!-- Preferences shared by both modes -->
-            <details class="prefs-details" id="prefsDetails" open>
-                <summary>Tailor it: who's around, where, cost <span class="prefs-summary" id="prefsSummary"></span></summary>
+            <details class="prefs-details" id="prefsDetails">
+                <summary>Filters <span class="prefs-summary" id="prefsSummary"></span></summary>
             <div class="prefs" aria-label="Preferences">
                 <div class="pref-group" role="group" aria-labelledby="prefSocialLabel">
                     <span class="pref-label" id="prefSocialLabel">Who's around</span>
@@ -198,7 +156,7 @@
         </div>
     </section>
 
-    <section class="container app-body">
+    <section class="container app-body" data-home>
         <!-- GUIDE ME -->
         <div id="guidePanel" role="tabpanel" aria-labelledby="tabGuide">
             <div class="need-grid" role="group" aria-label="What would help">
@@ -208,13 +166,11 @@
                 <button type="button" class="need-card" data-need="outdoors"><span class="selector-icon" aria-hidden="true">🌳</span><span class="selector-title">Get outside</span></button>
                 <button type="button" class="need-card" data-need="break"><span class="selector-icon" aria-hidden="true">🍃</span><span class="selector-title">Take a break</span></button>
                 <button type="button" class="need-card" data-need="explore"><span class="selector-icon" aria-hidden="true">🤝</span><span class="selector-title">Explore Austin</span></button>
-                <button type="button" class="need-card" data-need="doomscroll"><span class="selector-icon" aria-hidden="true">📵</span><span class="selector-title">Instead of doomscrolling</span></button>
-                <button type="button" class="need-card" data-need="saved"><span class="selector-icon" aria-hidden="true">♡</span><span class="selector-title">My saved <span class="saved-count" data-saved-count>0</span></span></button>
             </div>
 
             <div class="newcomer-row">
-                <button type="button" class="link-btn" data-need="newcomer">New to Austin or UT? Start here →</button>
-                <a href="#maps" class="link-btn">Campus maps →</a>
+                <button type="button" class="link-btn" data-need="newcomer">New to Austin or UT? →</button>
+                <button type="button" class="link-btn" data-need="doomscroll">Instead of doomscrolling →</button>
             </div>
 
             <div class="results" id="results" aria-live="polite">
@@ -271,12 +227,16 @@
         </div>
     </section>
 
+    <section class="container home-crisis" data-home>
+        <p><strong>Struggling right now?</strong> Call or text <a href="tel:988">988</a>, any time. <a href="#crisis">More crisis options →</a></p>
+    </section>
+
     <!-- STUDY SPOTS SECTION -->
-    <section class="container section-padding" id="study-section">
+    <section class="container section-padding page-view" id="study-section">
         <div class="library-section">
             <div class="section-header" style="margin-bottom: 2rem;">
                 <h2>Study spots</h2>
-                <p>Student-curated campus study nooks, libraries, and cafés. Looking for a place to meet a study group? Try “Social.”</p>
+                <p>Student-picked study nooks, libraries, and cafés.</p>
             </div>
 
             <div class="library-controls">
@@ -322,11 +282,11 @@
     </section>
 
     <!-- FULL LIBRARY -->
-    <section class="container" id="library">
+    <section class="container section-padding page-view" id="library">
         <div class="library-section">
             <div class="section-header" style="margin-bottom: 2rem;">
                 <h2>All resources</h2>
-                <p>Search everything: mental health services, movement, outdoors, art, and community guides.</p>
+                <p>Search everything on the site.</p>
             </div>
 
             <div class="library-controls">
@@ -353,7 +313,7 @@
     </section>
 
     <!-- MAPS -->
-    <section class="container section-padding" id="maps">
+    <section class="container section-padding page-view" id="maps">
         <div class="maps-section">
             <div class="section-header" style="margin-bottom: 1.5rem;">
                 <h2>Useful & random UT maps</h2>
@@ -380,7 +340,7 @@
     </section>
 
     <!-- CRISIS / IMMEDIATE SUPPORT (moved below the main experience) -->
-    <section class="container" id="crisis">
+    <section class="container section-padding page-view" id="crisis">
         <div class="urgent-banner">
             <div class="urgent-content">
                 <h2>Need immediate support?</h2>
@@ -426,7 +386,7 @@
     </section>
 
     <!-- FEEDBACK (one line, one button) -->
-    <section class="container feedback-simple" id="feedback-section">
+    <section class="container feedback-simple" id="feedback-section" data-home>
         <p>Something missing or out of date?</p>
         <a href="https://forms.gle/pxBk7z8dh8vFdkC1A" target="_blank" rel="noopener noreferrer" class="btn btn-primary dynamic-feedback-link" data-feedback="bottom">Send feedback</a>
         <small>Anonymous · takes a minute</small>
@@ -435,35 +395,10 @@
 
 <footer>
     <div class="container">
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <span class="brand-title" style="color: var(--white); font-size: 1.4rem;">The Equilibrium</span>
-                <p>Founded by Natalie Rivas, Wellness Coordinator, as part of the Dell Med Psychiatry Interest Group's commitment to psychiatry and student wellbeing. Built in collaboration with <a href="https://machinemindsautomation.com/#" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Machine Minds Automation</a>.</p>
-            </div>
-            <div class="footer-links">
-                <h4>Quick links</h4>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#study-section">Study spots</a></li>
-                    <li><a href="#library">All resources</a></li>
-                    <li><a href="#maps">UT maps</a></li>
-                    <li><a href="#about" data-about-link>Origin story</a></li>
-                </ul>
-            </div>
-            <div class="footer-links">
-                <h4>Community</h4>
-                <ul>
-                    <li><a href="https://forms.gle/pxBk7z8dh8vFdkC1A" target="_blank" rel="noopener noreferrer" class="dynamic-feedback-link">Improve this site</a></li>
-                    <li><a href="#crisis">Need help now?</a></li>
-                </ul>
-            </div>
-            <div class="footer-links">
-                <h4>Maintenance</h4>
-                <ul>
-                    <li><a href="#home">Student-maintained</a></li>
-                    <li id="footerReviewDate">Last site review: September 2026</li>
-                </ul>
-            </div>
+        <div class="footer-simple">
+            <span class="brand-title" style="color: var(--white); font-size: 1.25rem;">The Equilibrium</span>
+            <p>A Dell Med Psychiatry Interest Group project by Natalie Rivas, built with <a href="https://machinemindsautomation.com/#" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Machine Minds Automation</a>. Student-maintained, not a substitute for professional or emergency care.</p>
+            <nav class="footer-row"><a href="#about" data-about-link>Origin story</a><a href="#crisis">Need help now?</a><a href="https://forms.gle/pxBk7z8dh8vFdkC1A" target="_blank" rel="noopener noreferrer" class="dynamic-feedback-link">Send feedback ↗</a></nav>
         </div>
         <div class="footer-bottom">
             <p>&copy; Dell Med Student Wellness Collective.</p>
@@ -493,6 +428,7 @@
 <script src="directions.js"></script>
 <script src="text-cleanup.js"></script>
 <script src="prototype.js"></script>
+<script src="views.js"></script>
 
 </body>
 </html>

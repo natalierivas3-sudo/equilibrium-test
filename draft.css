@@ -57,3 +57,11 @@ body:not(.need-picked) #guidePanel #results { display: none; }
     border: 1px solid var(--burnt-orange); background: transparent; text-decoration: none;
 }
 .res-footer > .res-link:hover { background: var(--burnt-orange-light); text-decoration: none; }
+
+/* UT maps: small tags under each title for quick scanning. */
+.map-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin: 0.35rem 0 0.6rem; }
+.map-tags span {
+    font-size: 0.75rem; font-weight: 600; line-height: 1; white-space: nowrap;
+    padding: 0.3rem 0.6rem; border-radius: 999px;
+    background: var(--sage-light); color: var(--sage-dark);
+}

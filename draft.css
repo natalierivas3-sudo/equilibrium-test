@@ -65,3 +65,19 @@ body:not(.need-picked) #guidePanel #results { display: none; }
     padding: 0.3rem 0.6rem; border-radius: 999px;
     background: var(--sage-light); color: var(--sage-dark);
 }
+
+/* Origin story: skimmable. "In short" box up top, bold key phrases, shorter lines. */
+.about-gist {
+    margin: 1.5rem 0 2rem; padding: 1.1rem 1.25rem; border-radius: 14px;
+    background: var(--sage-light); border-left: 4px solid var(--sage-green);
+}
+.about-gist-label {
+    margin: 0 0 0.5rem; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--sage-dark);
+}
+.about-gist ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.45rem; }
+.about-gist li { line-height: 1.5; }
+.about-body, .about-gist { max-width: 62ch; }
+.about-body p { line-height: 1.7; }
+.about-body strong, .about-gist strong { font-weight: 600; color: var(--charcoal); }
+.about-body h2 { margin-top: 2.25rem; }

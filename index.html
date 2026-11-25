@@ -1,6 +1,19 @@
 <!doctype html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js): anonymous visit counts, labeled by site version. Ads features off. -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DC9YXMEDDM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-DC9YXMEDDM', {
+    site_version: 'v2',
+    allow_google_signals: false,
+    allow_ad_personalization_signals: false
+  });
+</script>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
@@ -428,6 +441,7 @@
         <div class="footer-simple">
             <span class="brand-title" style="color: var(--white); font-size: 1.25rem;">The Equilibrium</span>
             <p>A Dell Med Psychiatry Interest Group project by Natalie Rivas, built with <a href="https://machinemindsautomation.com/#" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Machine Minds Automation</a>. Student-maintained, not a substitute for professional or emergency care.</p>
+            <p class="footer-privacy">We count visits anonymously with Google Analytics. Nothing you type or rate is recorded.</p>
             <nav class="footer-row"><a href="#about" data-about-link>Origin story</a><a href="#crisis">Need help now?</a><a href="https://forms.gle/pxBk7z8dh8vFdkC1A" target="_blank" rel="noopener noreferrer" class="dynamic-feedback-link">Send feedback ↗</a></nav>
         </div>
         <div class="footer-bottom">
@@ -459,6 +473,7 @@
 <script src="text-cleanup.js"></script>
 <script src="prototype.js"></script>
 <script src="views.js"></script>
+<script src="analytics.js"></script>
 
 </body>
 </html>
